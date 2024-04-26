@@ -15,14 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const nftCollection = await hre.ethers.getContractFactory("ZKHiveToken");
-  const greeter = await nftCollection.deploy(
-    // "FlappyBee",
-    // "BEET",
-    // "100000000000000000000000000000000",
-    // "0x0b043cf92214D72ec5AcE6e54805797d627448E1" // mine test
-    // "0x4d175A3ae6f70398eAC94c79afcebb1fFd8abd6B" // project owner's wallet
-    // "0x302dc96a4398E9Dc08ac3f5324B70661C21750aD" //mine
-  );
+  const greeter = await nftCollection.deploy("0xC532a74256D3Db42D0Bf7a0400fEFDbad7694008", "0x0b043cf92214D72ec5AcE6e54805797d627448E1");
 
   await greeter.deployed();
 

@@ -74,7 +74,7 @@ module.exports = {
       },
     ],
   },
-  defaultNetwork: "bsc",
+  defaultNetwork: "sepolia",
   etherscan: {
     apiKey: process.env.ETHERSCAN_API_KEY,
   },
